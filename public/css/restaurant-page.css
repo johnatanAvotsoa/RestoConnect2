@@ -1,0 +1,36 @@
+.img{
+    width: 300px;
+    height: auto;
+}
+.btn-1{
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #4caf50;
+    transition: all 0.3s;
+}
+.btn-1-hover,.btn-1:hover{
+    border-bottom: 5px solid #4caf50;
+}
+.menu-image{
+    max-width: 50%;
+    height: auto;
+}
+
+.bx{
+    width: 900px;
+    min-height: 500px;
+}
+.c{
+    display: flex;
+    justify-content: space-around;
+}
+textarea{
+    background-color: transparent;
+    border: 1px solid #4caf50;
+    outline: none;
+    color: white;
+
+}

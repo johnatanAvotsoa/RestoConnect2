@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/root.css">
+    <link rel="stylesheet" href="../public/css/div.css">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="d1"></div><div class="d2"></div><div class="d3"></div>
+    <div class="d-flex align-items-center justify-content-center vh-100">
+        <form action="../Controller/login.php"method="POST" class="d-flex flex-column form-box-shadowed">
+            <button type="button" class="btn-secondaire mb-3">
+                <a href="" class="d-flex justify-content-around ">
+                    Se connecter avec Google
+                    <img src="../public/icons/google.svg" alt="google icon">
+                </a>
+            </button>
+            <label for="email">e-mail</label>
+            <input type="email" id="email" name="email" placeholder="e-mail" required>
+            <p id="mail-err"></p>
+            <label for="password">Mot de passe </label>
+            <input type="password" id="mdp" name="password" placeholder="Mot de passe " required>
+            <p id="psd-err"></p>
+            <input type="submit" value="Se connecter" class="btn-principale mt-3">
+            <a href="inscription.html" class="color-white text-center mt-2">Vous n'avez pas un compte? <span id="bleu">S'inscrire</span></a>
+        </form>
+    </div>
+
+    <script src="../public/js/form-validator.js"></script>
+</body>
+</html>

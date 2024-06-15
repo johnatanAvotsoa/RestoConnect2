@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-color: #121212;
+    color:  #E0E0E0;
+    overflow-x: hidden;
+}
+.row-1{
+    background-image: url(../image/vect.png);
+    background-size: contain;
+}
+.z-100{
+    z-index : 100 ;
+}
+.z-1{
+    z-index : -1 ;
+}
+.bx-shadow{
+    box-shadow: 0 2px 4px rgba(32, 32, 32, 0.1);
+}
+/*couleur texte vert*/
+.color-vert{
+    color: #4caf50;
+}
+.navbar{
+    width: 100vw;
+    position: fixed ;
+    padding: 10px 50px;
+}
+.navbar>img{
+    width: 150px;
+    height: 50px;
+}
+.color-white{
+    color: #d1d7e0 !important;
+}
+body{
+    font-size: 16px;
+    /* background-color: #1d2127 !important;
+    color: #d1d7e0 !important; */
+}
+button>a{
+    text-decoration: none;
+}
+/*boutton principale background vert */
+.btn-principale{
+    border: none;
+    background-color: #4caf50 ;
+    color: white;
+    padding: 10px;
+}
+.btn-principale:hover{
+    opacity: 0.8;
+}
+.btn-principale>a{
+    color: white;
+}
+
+/*boutton secondaire à bordure vert  */
+.btn-secondaire{
+    background-color: transparent;
+    color: #4caf50;
+    border: 1px solid #4caf50;
+    padding: 10px;
+}
+.btn-secondaire>a{
+    color: #4caf50;
+}
+.btn-secondaire:hover svg path.ci-primary{
+    fill: var(--ci-primary-color, white);
+}
+.btn-secondaire>a:hover{
+    color: white;
+}
+.btn-secondaire:hover{
+    background-color:#4caf50 ;
+    color: white;
+    padding: 10px;
+}
+
+/*forme et couleur des inputs */
+input[type="email"],input[type="password"],input[type="tel"],input[type="text"],input[type="number"]{
+    background-color: transparent;
+    width: 350px;
+    border: 1px solid #4caf50;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-position: 10px;
+    padding: 10px 10px 10px 45px;
+    background-repeat: no-repeat;
+    outline: none;
+    color: white;
+}
+
+#email{
+    background-image: url(../icons/email.svg);
+}
+/*mot de passe , confirmation mdp */
+#mdp,#mdp-conf{
+    background-image: url(../icons/lock.svg);
+
+}
+#telephone{
+    background-image: url(../icons/call.svg);
+}
+#username{
+    background-image: url(../icons/user.svg);
+}
+#adresse{
+    background-image: url(../icons/location.svg);
+}
+#cuisine{
+    background-image: url(../icons/restaurant-vert.svg);
+}
+/*couleur div liste miavaka amle background principale*/ 
+.form-box-shadowed{
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+.form-dark{
+    padding: 50px;
+    background-color: #181717d8;
+}
+a,a:hover{
+    text-decoration: none;
+}
+a.color-vert:hover{
+    color: #4caf50;
+}
+form{
+    z-index: 50;
+}
+/*boutton large */
+.lg-btn{
+    min-width: 250px;
+}
+
+/*message d'erreur mena amin'ny login sy création de compte */
+#msg-error{
+    color: rgba(223, 69, 69, 0.986);
+    font-size: 15px;
+}
+.color-white{
+    color : white; 
+}
+#bleu{
+    color : rgb(68, 138, 236) ; 
+}
+/*aside-menu*/
+.aside-nav{
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top:0 ; 
+    padding: 0;
+    /* border-right: 5px solid #4caf50; */
+
+}
+.aside-right{
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top:0 ;
+    left: 75%; 
+    padding: 0;
+}
+.aside-nav ul li a {
+    color: white;
+}
+.aside-nav ul{
+    width: 100%;
+}
+.aside-nav ul li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.info:hover{
+    background-color: green;
+    color: white;
+}
+.nav-item{
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.nav-item>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item>a:hover{
+    color: rgb(235, 235, 235);
+    border-left: 5px solid #4caf50;
+}
+.border-green{
+    border: 2px solid #4caf50;
+}
+.float-icon{
+    position:absolute;
+    top:-45px;
+    z-index: 999;
+    left:41.5%;
+    border-radius: 50%;
+    border:2px solid #4caf50;
+    padding:20px;
+    background-color: #4caf50;
+}
+.ps-relative{
+    position:relative;
+}
+.ps-absolute{
+    position: absolute;
+}
+.counter{
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    top: -8px;
+    font-weight: bolder;
+    left: 95px;
+}
+.w-200{
+   width: 240px;
+}

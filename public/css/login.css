@@ -1,0 +1,7 @@
+*{
+    overflow: hidden;
+}
+input{
+    padding: 10px;
+    color: white;
+}

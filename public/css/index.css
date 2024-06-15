@@ -1,0 +1,171 @@
+body{
+    overflow-x: hidden;
+}
+.bg-img-1{
+    background-image: url(../image/vect.png);
+    background-size: contain;
+}
+#text{
+    min-height: 50px;
+}
+.wp-200{
+    width: 250px;
+}
+.up{
+    position: relative;
+    opacity: 0;
+    transform: translateY(250px);
+    transition: all 0.5s;
+}
+.up-show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#b1{
+    transition: all 0.5s;
+}
+#b2{
+    transition: all 1s;
+}
+#b3{
+    transition: all 1.5s;
+}
+.box{
+    padding-top: 50px;
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+}
+.box-show{
+    transform: translateX(0);
+    opacity: 1;
+}
+.box>div{
+    /* border: 1px solid #4caf50; */
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.bg-white {
+    color: black;
+}
+
+.user-icon-button{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    padding-left: 20px; /* Espacement à gauche pour l'icône */
+    background-image: url('./public/icons/user.svg'); /* Remplacez par votre propre icône */
+    background-repeat: no-repeat;
+    background-position: 5px center; /* Position de l'icône, ajustez selon vos besoins */
+    padding: 10px 15px; /* Ajustez le rembourrage selon vos besoins */
+}
+
+input{
+    position: fixed;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 5px;
+    right: -1045px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4caf50;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.pdt{
+    padding-top: 50px;
+}
+input:hover{
+    cursor: pointer;
+    background-color: #3d9340;
+}
+
+.mimag{
+    position: absolute;
+    right: -30px;
+    top: 80px;
+    width: 55%;
+    overflow: hidden;
+    object-fit: cover;
+    background: transparent;
+}
+.paragraph{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    width: 55%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.head{
+    position: absolute;
+    height: 90px;
+    left: 70px;
+    top: 350px;
+    font-size: 55px;
+    letter-spacing: 2px;
+    color: #4caf50;
+}
+
+h4{
+    position: absolute;
+    left: 70px;
+    top: 440px;
+    font-size: 30px;
+    color: #d1d7e0;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    position: absolute;
+    left: 70px;
+    top: 480px;
+    color: #d1d7e0;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box>div{
+    border: 1px solid #4caf50;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.bg-white {
+    color: black;
+}
+.hidden {
+    display: none;
+    border: solid 1px red;
+    
+}
+
+

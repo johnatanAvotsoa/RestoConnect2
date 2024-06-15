@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/root.css">
+    <link rel="stylesheet" href="../public/css/div.css">
+    <link rel="stylesheet" href="../public/css/inscription.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="d-4"></div><div class="d2-a"></div><div class="d3"></div>
+    <div class="container w-100 d-flex align-items-center justify-content-center vh-100">
+        <form action="../Controller/inscription.php" method="POST" class="d-flex flex-column form-box-shadowed p-relative" id="user-form">
+            <div class="round btn-principale" id="btn-user">Créer un compte restaurant ? </div>
+            <label for="email">e-mail</label>
+            <input type="email" name="email" id="email" placeholder="email"required>
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" name="username" id="username" placeholder="Nom d'utilisateur" required>
+            <label for="telephone">Télephone</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Numéro de Télephone" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="mdp" placeholder="Mot de passe" required>
+            <label for="password">Confirmer le mot de passe</label>
+            <input type="password" id="mdp-conf" placeholder="Confirmer le mot de passe" required>
+            <p id="msg-error"></p>
+            <input type="submit" value="S'inscrire" class="btn-principale" id="btn" name="inscription">
+        </form>
+
+        <form action="../Controller/res-inscription.php" method="POST" class="d-flex flex-column form-box-shadowed d-none p-relative" id="rest-form">
+            <div class="round btn-principale" id="btn-res">Créer un compte client ?</div>
+            <label for="email">e-mail</label>
+            <input type="email" name="email" id="email" placeholder="email"required>
+            <label for="username">Nom du restaurant </label>
+            <input type="text" name="username" id="username" placeholder="Nom d'utilisateur" required>
+            <label for="adresse">Adresse du restaurant </label>
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse du restaurant" required>
+            <label for="cuisine">Spécialité du restaurant</label>
+            <input type="text" name="cuisine" id="cuisine" placeholder="Spécialité du restaurant" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="mdp" placeholder="Mot de passe" required>
+            <p id="msg-error"></p>
+            <input type="submit" value="S'inscrire" class="btn-principale" id="btn" name="inscription">
+        </form>
+
+    </div>
+
+    <script src="../public/js/form-validator.js"></script>
+    <script src="../public/js/hide-form.js"></script>
+</body>
+</html>
