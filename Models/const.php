@@ -2,4 +2,4 @@
     define("HOST",'localhost') ;
     define("USER",'root') ; 
     define("PASSWORD",'') ;
-    define("DBNAME",'restoconnectdb');
+    define("DBNAME",'restoconnect');

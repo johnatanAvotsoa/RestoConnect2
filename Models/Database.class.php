@@ -30,8 +30,8 @@ require 'const.php' ;
         public function insert($sql_command,$record_arr){
             if(!empty($record_arr)){
                 $insert = $this->con->prepare($sql_command) ; 
-                $insert->execute($record_arr) ; 
-                echo '1';
+                $insert->execute($record_arr) ;
+                    var_dump($insert->execute($record_arr) ); 
             }
             else{
 
@@ -39,24 +39,25 @@ require 'const.php' ;
             }
         }
 
-        public function update($sql_command,$path){
+        public function update($sql_command,/*$path*/){
             try{
                 $stmt = $this->con->prepare($sql_command);
                 $stmt->execute();
-                echo $stmt->rowCount() . " records UPDATED successfully";
-                header("location:$path") ; 
+                echo $stmt->rowCount() . "records UPDATED successfully";
+                //header("location:$path") ; 
             }catch(PDOException $e){
                 echo $sql_command . "<br>" . $e->getMessage();
             }
         }
 
-        public function delete($sql,$path){
+        public function delete($sql,/*$path*/){
            $this->con->exec($sql);
-           header("location:$path");
+           //header("location:$path");
         }
-    }
+}
+$u = new Database() ; 
+$sql = "UPDATE FROM user WHERE id_user = 8 SET nom = XXXXX " ; 
+//arr = ["user3","user3@gmail.com","123456789","c3","02433333"];
+$u->update($sql) ; 
 
-// $u = new Database() ; 
-// $sql = "INSERT INTO user (username,password,email,adresse,telephone) VALUES (?,?,?,?,?)" ;
-// $arr = ["1","2","3","4","5"] ; 
-// $u->insert($sql,$arr) ; 
+
