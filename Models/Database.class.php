@@ -37,7 +37,6 @@ require 'const.php' ;
                 echo "Insert error" ; 
             }
         }
-
         public function update($sql_command,/*$path*/){
             try{
                 $stmt = $this->con->prepare($sql_command);
@@ -57,6 +56,6 @@ require 'const.php' ;
 $u = new Database() ; 
 $sql = "INSERT INTO user(nom,email,`password`,adresse,cuisine,telephone) VALUES(?,?,?,?,?,?)" ; 
 $arr = ["user3","user3@gmail.com","123456789","c3","02433333"];
-$u->update($sql,$arr) ; 
+$u->insert($sql,$arr) ; 
 
 
