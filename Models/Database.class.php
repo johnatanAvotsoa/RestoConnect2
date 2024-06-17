@@ -31,7 +31,6 @@ require 'const.php' ;
             if(!empty($record_arr)){
                 $insert = $this->con->prepare($sql_command) ; 
                 $insert->execute($record_arr) ;
-                    var_dump($insert->execute($record_arr) ); 
             }
             else{
 
@@ -56,8 +55,8 @@ require 'const.php' ;
         }
 }
 $u = new Database() ; 
-$sql = "UPDATE FROM user WHERE id_user = 8 SET nom = XXXXX " ; 
-//arr = ["user3","user3@gmail.com","123456789","c3","02433333"];
-$u->update($sql) ; 
+$sql = "INSERT INTO user(nom,email,`password`,adresse,cuisine,telephone) VALUES(?,?,?,?,?,?)" ; 
+$arr = ["user3","user3@gmail.com","123456789","c3","02433333"];
+$u->update($sql,$arr) ; 
 
 
