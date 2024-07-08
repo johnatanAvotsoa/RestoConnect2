@@ -6,7 +6,7 @@ require_once '../Models/Restaurant.class.php' ;
         $adresse = $_POST["adresse"]; 
         $cuisine = $_POST["cuisine"];
         $password = $_POST["password"];
-        $r = new Restaurant($name,$password,$email,$adresse,"non-défini",$cuisine,"username-svgrepo-com.svg") ;
+        $r = new Restaurant($nom,$password,$email,$adresse,"non-défini",$cuisine,"username-svgrepo-com.svg") ;
         $r->insertToDatabase("../view/restaurant-login.html");
     }
 ?>

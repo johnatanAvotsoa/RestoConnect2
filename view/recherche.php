@@ -4,13 +4,11 @@ require_once '../Models/Database.class.php' ;
 if(isset($_GET["btn"])){
     $name;$adresse;$cuisine;$result;$output; 
     $db = new Database();
-    
         $name = $_GET["name"] ;
         $adresse = $_GET["adresse"];
         $cuisine = $_GET["cuisine"];
-        $sql = "SELECT * FROM restaurant WHERE nom LIKE '%$name%' AND adresse LIKE '%$adresse%' AND cuisine LIKE'%$cuisine%' ";
+        $sql = "SELECT * FROM restaurant WHERE nom LIKE '%$name%' OR adresse LIKE '%$adresse%' OR cuisine LIKE'%$cuisine%' ";
         $result = $db->selectAll($sql);
-        
 }
 ?>
 <!DOCTYPE html>
@@ -47,6 +45,7 @@ if(isset($_GET["btn"])){
             <h5 class="text-center mb-2">Résultats trouvé(s)</h5>
         <?php
             if(empty($result)){
+                var_dump($result) ; 
                 echo '<h2 class="text-center">Aucun résulat trouvé</h2>';
             }
             else{

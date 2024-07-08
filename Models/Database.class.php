@@ -21,7 +21,8 @@ class Database {
         try {
             $query = $this->con->query($sql_command);
             $query->execute();
-            $allrows = $query->fetchAll(PDO::FETCH_OBJ); 
+            $allrows = $query->fetchAll(PDO::FETCH_OBJ);
+            echo 'selected' ; 
             return $allrows;
         } catch(PDOException $e) {
             echo "Select error: " . $e->getMessage();
@@ -43,11 +44,12 @@ class Database {
         }
     }
 
-    public function update($sql_command, $params) {
+    public function update($sql_command, $params, $path) {
         try {
             $stmt = $this->con->prepare($sql_command);
             $stmt->execute($params);
             echo $stmt->rowCount() . " records UPDATED successfully";
+            header("Location : $path");
         } catch(PDOException $e) {
             echo "Update error: " . $sql_command . "<br>" . $e->getMessage();
         }
@@ -63,5 +65,4 @@ class Database {
     }
 }
 
-$u = new Database();
 

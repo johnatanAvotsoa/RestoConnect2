@@ -7,7 +7,7 @@ include_once '../Models/Database.class.php' ;
             $password = $_POST["password"]  ; 
             $array = $d->selectAll("SELECT * FROM user WHERE email = '$email'") ; 
             if(!empty($array)){
-                $u = new User($array[0]->username,$password,$email,$array[0]->adresse,$array[0]->telephone) ; 
+                $u = new User($array[0]->nom,$password,$email,$array[0]->adresse,$array[0]->telephone,$array[0]->cuisine) ; 
                 $u->logIn($u->password,"../view/user-profile.php");
             }else{
                 echo 'Ce compte n\'existe pas ' ;
